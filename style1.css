@@ -1,0 +1,75 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+    width: 100%;
+}
+
+/* State Details Card */
+.state-details {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.state-details:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Section Title */
+.state-details h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.state-details h2 {
+    color: #ae4fc3;
+    margin-top: 25px;
+    font-size: 1.4rem;
+}
+
+/* Paragraph Styling */
+.state-details p {
+    color: #3498db;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 0 15px;
+}
+
+/* Image Styling - Exact Same Size for All */
+.state-details img {
+    width: 250px; /* fixed width */
+    height: 150px; /* fixed height */
+    object-fit: cover; /* crop without stretching */
+    border-radius: 10px;
+    margin: 15px auto; /* center image */
+    display: block; /* ensures centering works */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.state-details img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+    .state-details img {
+        width: 200px; /* smaller width */
+        height: 120px; /* smaller height */
+    }
+}
